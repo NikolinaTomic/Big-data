@@ -1,7 +1,7 @@
 # Big data
 Application for batch and stream processing large amount of data using Apache Spark and Kafka
 
-Dataset used in the project is in the csv format (about 1GB large). It is about car accidents that happened in the UK from 2005 to 2015. Some of the answered questions in this project are:
+Dataset used in this project is in the csv format (about 1GB large). It is about car accidents that happened in the UK from 2005 to 2015. Some of the answered questions in this project are:
   - Number of accidents sorted by year 
   - Percentage of young drivers (under 30 years) in car accidents
   - Average age of vehicle in car accidents
