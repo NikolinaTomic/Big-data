@@ -22,7 +22,7 @@ $ hdfs dfs -mkdir myData
 $ hdfs dfs -put /myData /myData
 $ exit
 ```
-**4. Start batch processing**
+**4. Batch processing**
 ```sh
 $ docker exec -it spark-master bash
 $ spark/bin/spark-submit mySpark/batch.py
@@ -39,7 +39,8 @@ You can access these files in 2 ways:
 docker exec -it namenode bash 
 hdfs dfs -ls /results/
 ```
-**4. Stream processing**
+**5. Stream processing**
+
 Stream processing task is divided into 2 seperate files. You need to run them both using following commands.
 
 First:
@@ -54,7 +55,7 @@ $ spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2
 $ spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.4.4 /consumer/avgVehAge.py zoo1:2181 veh2topic
 ```
 Stream processing results is going to be written and updated in terminal on 4 seconds.
-**5. Shut down all containers**
+**6. Shut down all containers**
 ```sh   
 $ docker-compose down
 ```
