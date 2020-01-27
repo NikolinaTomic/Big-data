@@ -9,6 +9,7 @@ Dataset used in this project is in the csv format (about 1GB large). It is about
 
 # Steps
 **1. Unzip csv files in myData, producer and producer2 directories**
+
 **2. Build and start project in docker using following commands**
 ```sh
 $ docker-compose build 
