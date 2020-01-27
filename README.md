@@ -31,7 +31,7 @@ $ spark/bin/spark-submit mySpark/batch.py
 ```sh
 $ docker exec spark-master spark/bin/spark-submit mySpark/batch.py
 ```
-Results of batch processing is going to be written in terminal and in the hdfs files in the directory results.
+Results of batch processing is going to be written in terminal and in the hdfs files in the results directory.
 You can access these files in 2 ways:
   - Access Hue's web page with: localhost:8888
   - Login to namenode:
