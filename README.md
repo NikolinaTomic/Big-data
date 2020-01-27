@@ -41,11 +41,12 @@ hdfs dfs -ls /results/
 ```
 **4. Stream processing**
 Stream processing task is divided into 2 seperate files. You need to run them both using following commands.
-First in botj cases:
+
+First:
 ```sh   
 $ docker exec -it spark-master bash
 ```
-Then
+Then:
 ```sh   
 $ spark/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.4.4 /consumer/youngDrivers.py zoo1:2181 vehtopic
 ```
